@@ -61,8 +61,6 @@ impl Anchor {
                     beacon_root =
                         state_anchor.anchor.beacon_root(state_root, STATE_ROOT_LEAF_INDEX);
                     timestamp = state_anchor.anchor.timestamp();
-
-                    eprintln!("{}: {beacon_root}", timestamp.to::<u64>());
                 }
 
                 ResolvedAnchor { id: timestamp, hash: beacon_root }
